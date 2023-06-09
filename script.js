@@ -11,7 +11,7 @@ function createTable() {
 
 	for (let i = 0; i < r; i++) {
 		let Row = table.insertRow();
-		for (let i = 0; i < c; i++) {
+		for (let j = 0; j < c; j++) {
 			let Cell = Row.insertCell();
 			Cell.innerHTML = `Row-${i} Column-${j}`;
 		}
