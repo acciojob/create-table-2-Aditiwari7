@@ -1,17 +1,17 @@
 function createTable() {
     //Write your code here
-	var rn = parseInt(prompt("Input number of rows"));
-	var cn = parseInt(prompt("Input number of columns"));
+	var rn = prompt("Input number of rows");
+	var cn = prompt("Input number of columns");
 
 	var table = document.getElementById("myTable");
 
 	table.innerHTML = "";
 
-	for (let i = 0; i < rn; i++) {
-		var newRow = table.insertRow(i);
-		for (let i = 0; i < cn; i++) {
-			var newCell = newCol.insertCell(j);
-			newCell.innerHTML = "Row-"+i+"Column-"+j:
+	for (let i = 0; i < parseInt(rn); i++) {
+		let newRow = table.insertRow(i);
+		for (let i = 0; i < parseInt(cn); i++) {
+			let newCell = newCol.insertCell(j);
+			newCell.innerHTML = `Row-${i} Column-${j}`;
 		}
 	}
 }
